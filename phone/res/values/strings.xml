@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ *     Copyright (C) 2010~2014 FMSoft (Espier Studio)
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU Affero General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ *    GNU Affero General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Affero General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+-->
+<resources>
+    <string name="lgc_app_name">Live Group Chat</string>
+    <string name="lgc_app_desc">Live chat group description.</string>
+    <string name="lgc_noti_service_running">Notification service : Running</string>
+    <string name="lgc_noti_service_stop">Notification service : Stopped</string>
+    <string name="lgc_btn_accessibility">Accessibility</string>
+    <string name="lgc_websocket_url">WebSocket URL : </string>
+    <string name="lgc_websocket_url_hint">"ws://ip:port/xxx"</string>
+    <string name="lgc_username">Username : </string>
+    <string name="lgc_password">Password : </string>
+    <string name="lgc_start">Start</string>
+    <string name="lgc_stop">Stop</string>
+    <string name="lgc_user_pw_url_empty_error">"Parameters must not be null"</string>
+    <string name="lgc_login_failed">"Login failed : "</string>
+
+
+    <string name="lgc_meteor_state_connect">"connect to server ..."</string>
+    <string name="lgc_meteor_state_connect_ok">"connect ok ..."</string>
+    <string name="lgc_meteor_state_user_login">"user login ..."</string>
+    <string name="lgc_meteor_state_user_login_ok">"user login ok ..."</string>
+    <string name="lgc_meteor_state_user_login_failed">"user login failed ..."</string>
+    <string name="lgc_meteor_state_disconnect_reason">"disconnect reason : "</string>
+    <string name="lgc_meteor_state_update_data">"update data : "</string>
+
+</resources>

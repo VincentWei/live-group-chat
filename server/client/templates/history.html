@@ -1,0 +1,40 @@
+<template name="history">
+    <div class="panel panel-default" id="container">
+        <div class="panel-heading" id="panel_heading">
+            <a href="/" class="btn pull-left" id="btn_glyphicon">
+                <span class="glyphicon glyphicon-home active span_icon"></span>
+            </a>
+
+
+            <h1 id="title">{{date}}</h1>
+
+            <div id="sandbox-container" class="pull-right">
+                <a class="btn" id="btn_glyphicon">
+                    <span class="glyphicon glyphicon-calendar active span_icon"></span>
+                </a>
+            </div>
+            <script type="text/javascript">
+                $('#sandbox-container a').datepicker({
+                    language: "zh-CN",
+                    autoclose: true,
+                    todayHighlight: true,
+                    startDate: "2015-03-22",
+                    endDate: "今天"
+                }).on('changeDate', function (ev) {
+                        var timestamp = ev.date.getTime();
+                        if (timestamp != this.time) {
+                            day = ChatRecords.date(timestamp, "yyyy-MM-dd");
+                            Router.go("history", {time:timestamp, date: day});
+                        }
+                });
+            </script>
+        </div>
+        <div class="panel-body" id="panel_body">
+            <ul id="list_content_ul">
+                {{#each chat_records}}
+                    {{> chat_record_detail}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

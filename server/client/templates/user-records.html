@@ -1,0 +1,41 @@
+<template name="userRecords">
+
+    <div class="panel panel-default" id="container">
+        <div class="panel-heading" id="panel_heading">
+            <a href="/" class="btn pull-left" id="btn_glyphicon">
+                <span class="glyphicon glyphicon-home active span_icon"></span>
+            </a>
+
+            <h1 id="title">{{nickId}}的消息</h1>
+
+            <a href="/users" class="btn pull-right" id="btn_glyphicon">
+                <span class="glyphicon glyphicon-list pull-right span_icon"></span>
+            </a>
+        </div>
+
+        <div class="panel-body" id="panel_body">
+            <ul id="list_content_ul">
+                {{#each records this.nickId}}
+                    {{> userRecordItem}}
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</template>
+
+<template name="userRecordItem">
+    <table class="item">
+        <tr>
+            <div class="createdAt">
+                {{createdAtHuman createdAt}}
+            </div>
+        </tr>
+        <tr>
+            <div class="content">
+                {{content}}
+            </div>
+        </tr>
+    </table>
+</template>
+

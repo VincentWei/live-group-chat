@@ -1,0 +1,34 @@
+<template name="userRank">
+    <div class="panel panel-default" id="container">
+        <div class="panel-heading" id="panel_heading">
+
+            <a href="/" class="btn pull-left" id="btn_glyphicon">
+                <span class="glyphicon glyphicon-home active span_icon"></span>
+            </a>
+
+            <h1 id="title">活跃度排行板</h1>
+
+            <!-- for about center -->
+            <a href="#" class="btn pull-right invisible" id="btn_glyphicon">
+                <span class="glyphicon glyphicon-list pull-right span_icon"></span>
+            </a>
+        </div>
+
+        <ul class="list-group top_ul" id="list_content_ul">
+            {{#each users}}
+                {{> userItem}}
+            {{/each}}
+        </ul>
+
+    </div>
+
+</template>
+
+<template name="userItem">
+
+    <a class="list-group-item {{bg index}}" href="{{pathFor 'userRecords'}}">
+        <span class="badge">{{chatCount}}</span>
+        {{nickId}}
+    </a>
+
+</template>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2010~2014 FMSoft (Espier Studio)
+*
+* This file is a part of Espier apps.
+*
+* All rights reserved.
+*/
+-->
+<resources>
+    <string name="lgc_app_name">群聊直播</string>
+    <string name="lgc_app_desc">群聊直播描述</string>
+    <string name="lgc_noti_service_running">通知服务 : 正在运行</string>
+    <string name="lgc_noti_service_stop">通知服务 : 已停止</string>
+    <string name="lgc_btn_accessibility">辅助功能</string>
+    <string name="lgc_websocket_url">WebSocket URL : </string>
+    <string name="lgc_websocket_url_hint">"ws://ip:port/xxx"</string>
+    <string name="lgc_username">用户名 : </string>
+    <string name="lgc_password">密码 : </string>
+    <string name="lgc_start">启动</string>
+    <string name="lgc_stop">停止</string>
+    <string name="lgc_user_pw_url_empty_error">"参数不能为空"</string>
+    <string name="lgc_login_failed">"登录失败 : "</string>
+
+    <string name="lgc_meteor_state_connect">"正在连接服务器 ..."</string>
+    <string name="lgc_meteor_state_connect_ok">"服务器连接成功 ..."</string>
+    <string name="lgc_meteor_state_user_login">"用户登录 ..."</string>
+    <string name="lgc_meteor_state_user_login_ok">"用户登录成功 ..."</string>
+    <string name="lgc_meteor_state_user_login_failed">"用户登录失败 ..."</string>
+    <string name="lgc_meteor_state_disconnect_reason">"断开连接原因 : "</string>
+    <string name="lgc_meteor_state_update_data">"上传数据 : "</string>
+
+</resources>
